@@ -26,6 +26,10 @@ body {
     padding: 0 1rem;
 }
 
+main.wrapper {
+    padding-bottom: 1.5rem;
+}
+
 header {
     background: #7f1d1d;
     color: #fff;
@@ -111,7 +115,7 @@ nav a:focus {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(127, 29, 29, 0.65);
+        background: rgba(127, 29, 29, 0.495);
     backdrop-filter: brightness(0.8);
 }
 
@@ -158,6 +162,8 @@ nav a:focus {
     border-radius: 0.75rem;
     padding: 1.2rem;
     box-shadow: 0 2px 5px rgba(15, 23, 42, 0.08);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .section h2 {
@@ -259,7 +265,7 @@ footer {
     gap: 1.5rem;
 }
 
-.two-column>div {
+.two-column > div {
     flex: 1 1 260px;
 }
 
@@ -276,7 +282,6 @@ footer {
     margin-bottom: 15px;
 }
 
-/* tablet-ish */
 @media (max-width: 1024px) {
     .site-title-wrapper {
         padding: 0 1.5rem;
@@ -303,9 +308,13 @@ footer {
     .hero-content p {
         font-size: 0.95rem;
     }
+
+    .section {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
 }
 
-/* mobile & small devices */
 @media (max-width: 768px) {
     .wrapper {
         padding: 0 0.8rem;
@@ -378,9 +387,13 @@ footer {
     .two-column {
         flex-direction: column;
     }
+
+    .section {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
 }
 
-/* very small phones */
 @media (max-width: 480px) {
     .site-title {
         font-size: 1.3rem;
@@ -399,12 +412,19 @@ footer {
     .hero-content p {
         font-size: 0.86rem;
     }
+
+    .section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
-.hero-banner {
-    width: 99.5vw !important;
-    margin-left: calc(50% - 50vw) !important;
-    margin-right: calc(50% - 50vw) !important;
-    padding-left: 6rem;
-    padding-right: 3rem;
+@media (min-width: 1025px) {
+    .hero-banner {
+        width: 99.5vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        padding-left: 6rem;
+        padding-right: 3rem;
+    }
 }

@@ -115,7 +115,7 @@ nav a:focus {
     content: "";
     position: absolute;
     inset: 0;
-        background: rgba(127, 29, 29, 0.495);
+    background: rgba(127, 29, 29, 0.495);
     backdrop-filter: brightness(0.8);
 }
 
@@ -265,7 +265,7 @@ footer {
     gap: 1.5rem;
 }
 
-.two-column > div {
+.two-column>div {
     flex: 1 1 260px;
 }
 
@@ -419,12 +419,11 @@ footer {
     }
 }
 
-@media (min-width: 1025px) {
-    .hero-banner {
-        width: 99.5vw !important;
-        margin-left: calc(50% - 50vw) !important;
-        margin-right: calc(50% - 50vw) !important;
-        padding-left: 6rem;
-        padding-right: 3rem;
-    }
+
+.hero-banner {
+    width: 99.5vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    padding-left: 6rem;
+    padding-right: 3rem;
 }

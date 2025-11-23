@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fef2f2;
+    color: #222;
+    font-size: 15px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+header {
+    background: #7f1d1d;
+    color: #fff;
+    padding: 0.8rem 0 0.4rem 0;
+    width: 100%;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.site-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-bottom: 8px;
+    gap: 1rem;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    list-style: none;
+}
+
+ul,
+ol {
+    margin: 15px;
+}
+
+.flag-icon {
+    height: 55px;
+}
+
+nav {
+    margin-top: 0.3rem;
+    padding-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fee2e2;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #fecaca;
+    color: #7f1d1d;
+    border-color: #b91c1c;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 480px;
+    background-image: url("images/hero-nepal.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(127, 29, 29, 0.65);
+    backdrop-filter: brightness(0.8);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 650px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    background: #b91c1c;
+    color: #fef2f2;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: 1px solid #7f1d1d;
+    transition: 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #f97316;
+    color: #111827;
+    border-color: #ea580c;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(15, 23, 42, 0.08);
+}
+
+.section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #7f1d1d;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 240px;
+    background: #fff7f7;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    border: 1px solid #fecaca;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #7f1d1d;
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    padding: 0.6rem;
+    border: 1px solid #fecaca;
+    text-align: left;
+}
+
+th {
+    background: #fee2e2;
+}
+
+.about-layout {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1.3;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.25rem;
+}
+
+footer {
+    background: #111827;
+    color: #9ca3af;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.two-column>div {
+    flex: 1 1 260px;
+}
+
+.spaced-list li {
+    margin-bottom: 6px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* tablet-ish */
+@media (max-width: 1024px) {
+    .site-title-wrapper {
+        padding: 0 1.5rem;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .flag-icon {
+        height: 48px;
+    }
+
+    .hero-banner {
+        height: 400px;
+        padding-left: 3rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* mobile & small devices */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 0.8rem;
+    }
+
+    .hero-banner {
+        padding-left: 1.5rem !important;
+    }
+
+    .site-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
+        gap: 0.4rem;
+    }
+
+    .right-header {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
+
+    nav {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.82rem;
+    }
+
+    .flag-icon {
+        height: 42px;
+    }
+
+    .hero-banner {
+        height: 360px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+}
+
+/* very small phones */
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.3rem;
+    }
+
+    .hero-banner {
+        height: 320px;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.86rem;
+    }
+}
+
+.hero-banner {
+    width: 99.5vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    padding-left: 6rem;
+    padding-right: 3rem;
+}
